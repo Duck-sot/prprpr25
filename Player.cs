@@ -25,10 +25,10 @@ namespace prprpr25
         private void Move(){
             KeyboardState kState = Keyboard.GetState(); 
             if(kState.IsKeyDown(Keys.A)){
-                position.X -= 1; 
+                position.X -= 5; 
             }
             else if(kState.IsKeyDown(Keys.D)){
-                position.X +=1; 
+                position.X +=5; 
             }
             hitbox.Location = position.ToPoint(); 
         }

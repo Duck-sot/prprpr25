@@ -7,6 +7,6 @@
     <File>C:/Users/Admin/Documents/GitHub/prprpr25/Content/a-wing-pixel-art-star-wars-xwing-awing_grande.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
+    <File>spaceShip.png</File>
   </DestFiles>
 </SourceFileCollection>
