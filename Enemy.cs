@@ -31,5 +31,9 @@ namespace prprpr25
         public void Draw(SpriteBatch spriteBatch){
             spriteBatch.Draw(texture,hitbox,Microsoft.Xna.Framework.Color.PaleVioletRed);
         }
+        public Microsoft.Xna.Framework.Rectangle Hitbox{
+            get{return hitbox; }
+
+        }
     }
 }

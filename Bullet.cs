@@ -12,7 +12,7 @@ namespace prprpr25
 
         public Rectangle Hitbox{
             get{return hitbox;}
-            set{hitbox = value;}
+            
         } 
         public Bullet(Texture2D texture, Vector2 spawnPosition){
             this.texture = texture;
