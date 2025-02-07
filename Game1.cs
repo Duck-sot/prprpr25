@@ -32,7 +32,7 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         spaceShip = Content.Load<Texture2D>(assetName:"spaceShip");
 
-        player = new Player(spaceShip, new Vector2(380,350),50);
+        player = new Player(spaceShip, new Vector2(380,350),50, 3);
         
 
         // TODO: use this.Content to load your game content here
@@ -51,6 +51,7 @@ public class Game1 : Game
         }
         EnemyBulletColition();
         base.Update(gameTime);
+        PlayerEnemyColition();
     }
 
     protected override void Draw(GameTime gameTime)
@@ -90,5 +91,15 @@ public class Game1 : Game
                 
             }
         }
+    }
+    private void PlayerEnemyColition(){ 
+        for(int i =0; i<enemies.Count; i++)
+            if(enemies[i].Hitbox.Intersects(player.Hitbox)){
+                player.hp--; 
+                enemies.RemoveAt(i);
+                if(player.hp==0){
+                    Exit();
+                } 
+            }
     }
 }

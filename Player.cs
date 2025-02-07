@@ -14,14 +14,19 @@ namespace prprpr25
         private Rectangle hitbox; 
         private KeyboardState newkstate;
         private KeyboardState oldkstate;
+        private int hp; 
         private List<Bullet> bullets = new List<Bullet>();
         public List<Bullet> Bullets{
             get{return bullets;}
         }
-        public Player(Texture2D texture, Vector2 position,int pixelSize){
+        public int Hp{
+            get{return hp;}
+        }
+        public Player(Texture2D texture, Vector2 position,int pixelSize,int hp){ 
             this.texture = texture;
             this.position=position;
             hitbox = new Rectangle((int)position.X,(int)position.Y,pixelSize,pixelSize);
+            this.hp=hp;
         }
         public void Update(){
             newkstate = Keyboard.GetState(); 
@@ -31,6 +36,9 @@ namespace prprpr25
             foreach(Bullet b in bullets){
                 b.Update();
             }
+        }
+        public Rectangle Hitbox{
+            get{return hitbox;}
         }
 
         private void Shoot(){
