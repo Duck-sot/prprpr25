@@ -21,6 +21,7 @@ namespace prprpr25
         }
         public int Hp{
             get{return hp;}
+            set{hp = value;}
         }
         public Player(Texture2D texture, Vector2 position,int pixelSize,int hp){ 
             this.texture = texture;

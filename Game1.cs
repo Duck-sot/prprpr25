@@ -95,9 +95,10 @@ public class Game1 : Game
     private void PlayerEnemyColition(){ 
         for(int i =0; i<enemies.Count; i++)
             if(enemies[i].Hitbox.Intersects(player.Hitbox)){
-                player.hp--; 
+                player.Hp --;  
                 enemies.RemoveAt(i);
-                if(player.hp==0){
+                player.Hp = Math.Clamp(player.Hp,0, 3);
+                if(player.Hp==0){
                     Exit();
                 } 
             }
