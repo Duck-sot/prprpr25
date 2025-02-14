@@ -13,13 +13,15 @@ public class Game1 : Game
     private Player player;
     private Texture2D spaceShip; 
     private List<Enemy> enemies = new List<Enemy>();
+
+    int points= 0; 
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
-
+    
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
@@ -101,6 +103,12 @@ public class Game1 : Game
                 if(player.Hp==0){
                     Exit();
                 } 
+            }
+    }
+    private void PointSystem(){
+        for(int i =0; i<enemies.Count; i++)
+            if(enemies[i].Hitbox.Intersects(player.Hitbox)){
+                points++; 
             }
     }
 }
