@@ -5,8 +5,14 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/Admin/Documents/GitHub/prprpr25/Content/a-wing-pixel-art-star-wars-xwing-awing_grande.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/prprpr25/Content/hart no hp.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/prprpr25/Content/heart.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/prprpr25/Content/scoreFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
     <File>spaceShip.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

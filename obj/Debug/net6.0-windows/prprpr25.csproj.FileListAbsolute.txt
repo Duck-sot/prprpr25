@@ -38,3 +38,6 @@ C:\Users\Admin\Documents\GitHub\prprpr25\obj\Debug\net6.0-windows\prprpr25.genru
 C:\Users\Admin\Documents\GitHub\prprpr25\obj\Debug\net6.0-windows\ref\prprpr25.dll
 C:\Users\Admin\Documents\GitHub\prprpr25\obj\Debug\net6.0-windows\prprpr25.sourcelink.json
 C:\Users\Admin\Documents\GitHub\prprpr25\bin\Debug\net6.0-windows\Content\spaceShip.xnb
+C:\Users\Admin\Documents\GitHub\prprpr25\bin\Debug\net6.0-windows\Content\hart no hp.xnb
+C:\Users\Admin\Documents\GitHub\prprpr25\bin\Debug\net6.0-windows\Content\heart.xnb
+C:\Users\Admin\Documents\GitHub\prprpr25\bin\Debug\net6.0-windows\Content\scoreFont.xnb

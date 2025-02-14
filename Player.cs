@@ -62,6 +62,12 @@ namespace prprpr25
             else if(newkstate.IsKeyDown(Keys.D)){
                 position.X +=5; 
             }
+            if(newkstate.IsKeyDown(Keys.W)){
+                position.Y -= 5; 
+            }
+            if(newkstate.IsKeyDown(Keys.S)){
+                position.Y += 5; 
+            }
             hitbox.Location = position.ToPoint(); 
         }
     }
